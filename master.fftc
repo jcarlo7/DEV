@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<testCase version="9.4.0.202309061644">
+    <general>
+        <language>Python</language>
+        <xPathVersion>XPATH31</xPathVersion>
+    </general>
+    <testbed>project://my_project/topologies/SpirentTopo.tbml</testbed>
+    <procedures>
+        <item name="main">
+            <steps>
+                <item guid="607daa7a-30fa-4d58-82a0-d0a015c9728b" action="message" useFieldsInCommand="false">
+                    <command>
+                        <body>Information: This is MASTER</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.execution.builtin.exec.MessagePropertyGroup">
+                        <message inherit="false"> This is MASTER</message>
+                    </applicationProperties>
+                </item>
+                <item guid="a69844c3-81a6-47ca-94ea-3978fcab5d36" action="run">
+                    <command>
+                        <body>child1.fftc</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.execution.kernel.ExecRunPropertyGroup" testbedSelection="UseSpecified">
+                        <specifiedTestbed>project://my_project/topologies/SpirentChild1.tbml</specifiedTestbed>
+                    </applicationProperties>
+                </item>
+                <item guid="0cc89436-ee8d-469a-86ea-a3961d8c2617" action="run">
+                    <command>
+                        <body>child2.fftc</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.execution.kernel.ExecRunPropertyGroup"/>
+                </item>
+            </steps>
+        </item>
+    </procedures>
+</testCase>
