@@ -4,7 +4,6 @@
         <language>Python</language>
         <xPathVersion>XPATH31</xPathVersion>
     </general>
-    <testbed>project://my_project/topologies/SpirentTopo.tbml</testbed>
     <procedures>
         <item name="main">
             <steps>
