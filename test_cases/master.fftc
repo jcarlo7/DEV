@@ -20,7 +20,7 @@
                         <body>child1.fftc</body>
                     </command>
                     <applicationProperties type="com.fnfr.svt.execution.kernel.ExecRunPropertyGroup" testbedSelection="UseSpecified">
-                        <specifiedTestbed>/data/repository/repositories/main/local0/my_project/topologies/SpirentChild1.tbml</specifiedTestbed>
+                        <specifiedTestbed>project://my_project/topologies/SpirentChild1.tbml</specifiedTestbed>
                     </applicationProperties>
                 </item>
                 <item guid="0cc89436-ee8d-469a-86ea-a3961d8c2617" action="run">
